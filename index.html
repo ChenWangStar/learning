@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>义务教育教科书下载</title>
+    <style>
+        .dir {
+            margin: 20px;
+            color: black;
+            font-family: "HarmonyOS Sans SC Medium";
+            left: 295px;
+            top: 291px;
+            width: auto;
+            height: 30px;
+            border-radius: 10px;
+            opacity: 1;
+            text-align: center;
+            box-sizing: border-box;
+            border: 3px solid #0056FF;
+
+        }
+
+        .dir:hover {
+            color: white;
+            background-color: #0056FF;
+        }
+    </style>
+
+</head>
+<body>
+<h1 style="font-family: 'HarmonyOS Sans SC Medium'; text-align: center">义务教育教科书下载</h1>
+<div class="dir" data-url="./fifth_grade.html">五年级教科书下载</div>
+<div class="dir" data-url="./sixth_grade.html">六年级教科书下载</div>
+<br>
+<br>
+<h1>从本站下载的义务教育教科书版权归人民教育出版社所有</h1>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var links = document.querySelectorAll(".dir");
+        links.forEach(function(link) {
+            link.addEventListener("click", function() {
+                var url = this.getAttribute("data-url");
+                window.location.href = url;
+            });
+        });
+    });
+
+</script>
+
+
+</body>
+</html>
